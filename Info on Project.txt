@@ -1,0 +1,113 @@
+About Project
+
+you may have pondered, when is the ideal time of year to reserve a hotel room. Alternatively, the ideal stay period to obtain the greatest daily rate? What if you wanted to foretell whether a hotel would unreasonably frequently receive unusual requests? You can investigate those questions with the aid of our Hotel booking dataset !
+This dataset contains booking information for a city hotel and a resort hotel,and includes information such as when the booking was made, length of stay, the number of adults, children, and/or babies, and the number of available parking spaces.
+The major goal of this project is to investigate and analyse data in order to identify significant elements that influence reservations and provide knowledge to hotel management so that it may implement various campaigns to increase sales and performance.
+
+Part-1(Data Cleaning and Analysing Columns)
+
+We started by cleaning the data to remove null and unwanted entries, ensuring our dataset was ready for analysis. Key steps included:
+- Removing null values using the dropna() function.
+- Removing duplicate rows from data set.
+
+Part-2(Exploratory Data Analysis)
+
+Univariate Analysis 
+
+1. What kind of hotels are most popular among visitors?
+Here we can clearly see that City Hotel is most preferred hotel by the visitors
+
+2. Which agent secured the most bookings?
+ Top Agent is Agent 9 who has Most Number of Bookings
+
+3. Cancelation Percentage:
+ 27.5 % of the bookings were cancelled.
+
+4. What is the Percentage of repeated guests?
+ Only 3.90% of visitors are repeats, which is quite small.
+
+5. What is the "Customer Type" distribution in percentages?
+Contract : when the booking has an allotment or other type of contract associated to it
+Group : when the booking is associated to a group
+Transient : when the booking is not part of a group or contract, and is not associated to other transient booking
+Transient-party : when the booking is transient, but is associated to at least other transient booking
+ The percentage of transient customers is higher at 82.4%. A very small fraction of Bookings are connected to the Group.
+
+6. Percentage distribution of required car parking spaces?
+The parking space was not needed by 91.6% of the visitors. 8.3% of visitors only needed one parking space.
+
+7. Which cuisine is most popular among the visitors?
+1. Consequently, bed and breakfast(BB) is the most popular sort of meal among the visitors.
+2. Almost Equally desirable are HB- (Half Board) and SC- (Self Catering).
+
+8. What is the Deposite type's percentage distribution?
+The majority of visitors almost 98.7% prefer "No deposit" types of deposits which means the customer made no deposit to guarantee the booking.
+
+9. Which kind of room is most popular among customers?
+The most preferred Room type is "A".
+
+10. Which month received the most reservations?
+The months with the most bookings were July and August. Bookings may have been made in anticipation of summer vacations.
+
+11. Which distribution method is most popular for hotel reservations?
+'TA/TO' is mostly used for booking hoetls.
+
+12. In which year were the most reservations made?
+1. City hotels had the most of the bookings
+2. 2016 had the highest bookings and 2015 had the lowest bookings
+
+Bivariate and Multivariate Analysis
+
+1. What kind of hotel has the highest ADR?
+The highest ADR is at the City Hotel. This indicates that city hotels make more money than resort hotels.
+
+
+2. Which hotel category has the more average lead time?
+Hotel resorts have a slightly longer average lead time. Customers must make very early travel plans as a result.
+
+3. Which hotel experiences the highest rate of cancellations?
+City hotel experiences the highest rate of cancellations.
+
+4. Which hotel has longer waiting time?
+Therefore, there is a lengthier wait time at city hotels than at resort hotels. As a result, we can conclude that city hotels are significantly busier than resort hotels.
+
+5.Which hotels receive the most return visitors?
+ Compared to City Hotels, Resort Hotel has a little bit more repeat visitors.
+
+6. ADR compared between several months.
+1. In comparison to City Hotels, the ADR for Resrot Hotel is higher in the months of July and August.Perhaps clients/people wish to vacation in resort hotels this summer.
+2. January, February, March, April, October, November, and December are the ideal months for visitors to resort or city hotels because of the low average daily rate throughout these months
+
+7. ADR across Distribution Channel
+1. "Direct" and "TA/TO" has almost equal ADR in both type of Hotel which is high among other channels
+2. GDS scores highly in the "City Hotel" category. Bookings for Resort Hotels must rise at GDS.
+3. This indicates that "Direct" and "TA/TO" are outperforming the other channels in terms of revenue generation.
+
+8. ADR across Different Market Segment
+In both types of hotels, "Direct" and "Online TA" are making the most contributions.
+
+9. Which type of Distribution Channel has the highest cancellation count?
+In "TA/TO", City hotels has the high cancellation rate compared to resort hotels.
+
+10. What is the Total stay length in each Hotel type ?
+The ideal stay in either sort of hotel is under seven days.
+
+11. Relationship between returning visitors and cancelled reservations.
+ Booking cancellations are more common among non-repeat visitors.
+
+12. Correlation between different columns
+1)Total people and adr are positively Correlated that means more number of people increases the adr.
+2)"is_repeted guest" and "previous_bookings_not_canceled" have a stong positive correlation.
+3)Lead time and total stay have a positive relationship. This implies that the lead time will increase as the customer stays longer.
+
+Insights:
+
+1)City hotels are more popular and generate higher ADR but also face higher cancellation rates and longer waiting times.
+2)Resort hotels see more return visitors and have a slightly longer lead time.
+3)Direct and TA/TO booking channels are the most effective in terms of revenue generation.
+4)Booking cancellations are predominantly from non-repeat visitors.
+5)Most bookings occur during summer months, with July and August being the peak booking periods.
+
+Conclusion:
+
+The analysis provides valuable insights into booking patterns, guest preferences, and factors influencing hotel reservations. These findings can help hotel management design targeted marketing campaigns, optimize pricing strategies, and improve customer satisfaction to boost overall performance and sales.
